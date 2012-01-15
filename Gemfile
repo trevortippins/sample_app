@@ -34,5 +34,13 @@ group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc8'
+
+  # Autotest on Linux (Ubuntu 10.04) requires "sudo apt-get install libnotify-bin"
+  # See http://automate-everything.com/2009/08/gnome-and-autospec-notifications
+  # Contrary to documentation on website, "redgreen" is NOT required
+
+  gem 'autotest', '4.4.6'
+  gem 'autotest-rails-pure', '4.1.2'
+  gem 'ZenTest', '4.6.2'               
 end
 
